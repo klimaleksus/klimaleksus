@@ -1,8 +1,8 @@
-﻿# klimaleksus.github.io
+﻿# https://klimaleksus.github.io/
 
 ## Projects here:
 
-### [./VkMsgExport](VkMsgExport)
+### [VkMsgExport](./VkMsgExport)
 
-### [./find-twin](find-twin)
+### [find-twin](./find-twin)
 
