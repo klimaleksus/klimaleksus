@@ -2,6 +2,6 @@
 
 ## Projects here:
 
-### [VkMsgExport](https://klimaleksus.github.io/VkMsgExport)
+### [VkMsgExport](https://github.com/klimaleksus/VkMsgExport)
 
-### [find-twin](https://klimaleksus.github.io/find-twin)
+### [FindTwin](https://klimaleksus.github.io/FindTwin)
