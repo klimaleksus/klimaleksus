@@ -1,0 +1,15 @@
+<script>
+var ab = new ArrayBuffer(4);
+var u32 = new Uint32Array(ab,0,1);
+var u8 = new Uint8Array(ab,0,4);
+u32[0] = 123456;
+var s = '';
+for(var i=0; i<4; i++)
+  s += u8[i]+' ';
+if(s=='64 226 1 0 ')
+  s = 'your system is LITTLE endian';
+else if(s=='0 1 226 64 ')
+  s = 'your system is BIG endian!';
+else s = 'strange results, "'+s+'"';
+prompt(s,s);
+</script>
