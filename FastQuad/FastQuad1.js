@@ -3,7 +3,7 @@
 "use strict"
 
 var FastQuad;
-var Finite = Number.isFinite;
+var Finite = Number.isFinite || function(){return true;};
 var Cache = [];
 var Index = -1;
 var Empty = false;
@@ -467,7 +467,7 @@ Object.defineProperties(FastQuad,{
 
 Object.preventExtensions(FastQuad);
 
-if(typeof(module)!=='undefined')
+if(typeof(module)!=='undefined' && typeof(window)==='undefined')
   module.exports = FastQuad;
 else
   window.FastQuad = FastQuad;
