@@ -302,6 +302,59 @@ function GEBI(id){
 
 window.pref_now = window.performance && (performance.now || performance.webkitNow || performance.mozNow || performance.msNow).bind(performance) || Date.now && Date.now.bind(Date) || function(){return new Date().getTime();};
 
+
+
+/*
+javascript:void((function DevArtParserInit(){
+  var Version = 'DevArtParser1V2';
+  try{
+    if(!document.location.hostname.match(/\bdeviantart\.com$/))
+      return (document.location = 'https://www.deviantart.com/_napi/da-deviation/shared_api/deviation/extended_fetch');
+    if((typeof DevArtParserBody)!=='undefined' && DevArtParserBody.toSource)
+      localStorage[Version] = DevArtParserBody.toSource();
+    (0,window.eval).call(window,(localStorage[Version]||'{alert("No DevArtParserBody?");}').replace(/^.*?\{/i,'').replace(/}[^}]*$/i,''));
+  }catch(e){
+    console.error(e);
+    setTimeout(function(){throw e});
+    alert('DevArtParserInit ERROR!');
+  }
+})())
+
+/* ------------------ * /
+
+
+/* ----------*/
+
+//};'';
+
+// EOF
+
+// https://www.deviantart.com/mallevollo/art/Mulan-s-Hanging-566337566
+// https://htmlformatter.com/
+
+
+/*
+var i=0;
+(function next(){
+  Promise.resolve().then(next);
+  console.log(++i);
+})();
+*/
+
+/*
+void setTimeout(function(log){
+  log(1);
+  setTimeout(log,0,2);
+  (new Promise(function(ok,err){
+    log(3);
+    ok(4);
+  })).then(log);
+  setTimeout(log,0,5);
+  log(6);
+},1,function(v){console.log(v);});
+*/
+
+
 </script>
 </body>
 </html>
