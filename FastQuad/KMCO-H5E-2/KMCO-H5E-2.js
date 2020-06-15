@@ -392,6 +392,11 @@ setTimeout(function(){
   Game.init();
 });
 
+window.addEventListener('keydown',function(e){
+  if(Game.paused())
+    if(e.keyCode===13)
+      Game.play();
+});
 
 var Menu = (function Menu(){
   var Menu = {
@@ -452,7 +457,7 @@ var Menu = (function Menu(){
 })();
 
 
-throw '';
+throw '(not an error)';
 
 ////////////////////////////////////////////////////////////////////////////
 //========================================================================//
